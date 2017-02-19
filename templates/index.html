@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>Muskegon Area Sports Hall of Fame</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+	<!-- My script -->
+	<script src="js/menu.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<!-- My link -->
+	<link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+	<div class="navigation" id="mySidenav">
+		<nav>
+			<ul>
+				<li><a href="javascript:void(0)" class="remove" onclick="closeNav()">&times;</a></li>
+				<li><a href="home">Home</a></li>
+				<li><a href="exhibits">Exhibits</a></li>
+				<li><a href="history">History</a></li>
+				<li><a href="inductees">Inductees</a></li>
+				<li><a href="distinguished-service">Distinguished <span id="service">Service</span></a></li>
+				<li><a href="scholar-athlete">Scholar <span id="athletes">Athletes</span></a></li>
+				<li><a href="ceremony">Ceremony</a></li>
+				<li><a href="news">News</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Donate</a></li>
+				<li><a href="#">Sponsors</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<script>
+		function openNav() {
+		    document.getElementById("mySidenav").style.width = "300px";
+		    document.getElementById("openbutton").style.display = "none";
+		}
+
+		function closeNav() {
+		    document.getElementById("mySidenav").style.width = "0";
+		    document.getElementById("openbutton").style.display = "flex";
+		    document.getElementById("openbutton").style.display = "flex";
+		}
+	</script>
+
+	<div class="landing-background">
+		<span onclick="openNav()" class="glyphicon glyphicon-menu-hamburger" aria-hidden="true" id="openbutton"></span>
+		<img src="static/landing/mashf-logo.png" alt="MASHF Logo">
+		<p class:"scroll-down"><a href="#about-jump"><span class="glyphicon glyphicon-menu-down scroll-icon" aria-hidden="true"></span></br><i>scroll down</i></a></p>
+	</div>
+
+	<script>
+		$(function() {
+		  $('a[href*="#"]:not([href="#"])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html, body').animate({
+		          scrollTop: target.offset().top
+		        }, 1000);
+		        return false;
+		      }
+		    }
+		  });
+		});
+	</script>
+
+	<div id="about-jump">
+		<div class="container white-bg">
+			<div class="row">
+				<h2 class="orange-section-header">About</h2>
+
+				<p class="col-sm-6"> Organized in 1986, the Muskegon Area Sports Hall of Fame honors our own heroes and legends, spanning the rich history of sports achievement in the Lake Michigan shoreline area anchored by Ludington to the North and Grand Haven to the south.</p>
+
+				<p class="col-sm-6">The Hall of Fame exhibit, located in downtown Muskegon on the concourse level of the L.C. Walker Arena, features a fascinating collection of artifacts, photos and commemorative plaques honoring the area's sports heritage. Displays highlight the accomplishments of the over 100 sports notables enshrined over the last 20 years.</p>
+
+			    <p class="col-sm-6">Inductees include <a href="#">Earl Morrall</a>, a 21-year veteran of the National Football League; <a href="#">Sherm Poppen</a>, the inventor of the snowboard; <a href="#">Bennie Oosterbaan</a>, one of only two athletes honored as a three-time All American in football at the University of Michigan; <a href="#">Sally Sessions</a>; one of the 13 founding members of the Ladies Professional Golf Association, <a href="#">Donna Cook & Doris Cook</a>, players in the All-American Girls Professional Baseball League and many more.  Sports as diverse as boxing, with world lightweight contender <a href="#">Kenny Lane</a> and Olympic quarterfinalist  <a href="#">Phil Baldwin</a> and Speed Roller Skating, with <a href="#">Kenny Sutton</a>, a two-time gold medalist at the Pan-American games, are represented.</p>
+
+			    <p class="col-sm-6">Two <a href="#">Scholar-Athletes</a>, one male and one female, are honored annually at the hall's annual induction banquet hosted in June in downtown Muskegon.  A member of the community also is selected for his or her dedication to the sports community with the organization's <a href="#">Distinguished Service Award</a>.</p>
+
+			    <p class="col-sm-6">Take time to explore the site and learn about the area's incredible sports history!</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="orange-bg" >
+		<div class="container">
+			<div class="row">
+				<h2 class="white-section-header">Who Are We?</h2>
+
+				<p>The Hall of Fame is guided by a Board of Directors, comprised of 13 members.</p>
+
+				<p>This group of volunteers solicits nominees, biographical information, assembles a ballot and elects members to the Hall of Fame.</p>
+
+				<p>In addition, the board honors a member of the community with the Hall's Distinguished Service Award.  This award recognizes the meritorious service of individuals who have made a major contribution to the area of athletics in a supportive role.  A category to honor a male and a female Scholar/Athlete was added in 1996.  Awarded annually by the Hall of Fame, the honor is bestowed upon the students that best exemplify a combination of scholastic achievement, athletic excellence and community service.</p>
+
+				<span class="btn">Current Board Members <span class="glyphicon glyphicon-menu-down" id="btn-down"></span></span>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="location-background">
+		<div class="container">
+			<h2><span class="photo-header">Find Us</span> <i>&</i> <span class="photo-header">Discover</span></h2>
+			<h5>L.C. Walker Arena</h5>
+			<h4>955 4th Street  at Shoreline Drive</h4>
+			<h6>Muskegon, MI 49440</h6>
+		</div>
+	</div>
+
+	<div class="gray-bg">
+		<div class="container">
+			<h2 class="orange-section-header">Contact</h2>
+			<div class="col-lg-6 contact-p">
+				<p>The board of the Muskegon Area Sports Hall of Fame is interested in hearing from you.</p>
+
+				<p>Contact us at: <a href="mailto:mail@mashf.com" target="_top">mail@mashf.com</a></p>
+
+				<p>Please include your full name and contact information.</p>
+
+				<p>Thank You!</p>
+
+			<!-- <form id="contact-form" method="post" action="contact.php" role="form">
+
+			    <div class="messages"></div>
+
+			    <div class="controls">
+
+			        <div class="row">
+			            <div class="col-md-8">
+			                <div class="form-group">
+			                    <label for="form_name">Full Name *</label>
+			                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Joe Shmoe" required="required" data-error="Full Name is required.">
+			                    <div class="help-block with-errors"></div>
+			                </div>
+			            </div>
+			        </div>
+			        <div class="row">
+			            <div class="col-md-8">
+			                <div class="form-group">
+			                    <label for="form_email">Email *</label>
+			                    <input id="form_email" type="email" name="email" class="form-control" placeholder="joeshmoe@mashf.com" required="required" data-error="Valid email is required.">
+			                    <div class="help-block with-errors"></div>
+			                </div>
+			            </div>
+			        </div>
+			        <div class="row">
+			            <div class="col-md-8">
+			                <div class="form-group">
+			                    <label for="form_message">Message *</label>
+			                    <textarea id="form_message" name="message" class="form-control" placeholder="Please include your contact information." rows="4" required="required" data-error="Please,leave us a message."></textarea>
+			                    <div class="help-block with-errors"></div>
+			                </div>
+			            </div>
+			            <div class="col-md-8">
+			                <input type="submit" class="btn btn-success btn-send" value="Send message">
+			            </div>
+			        </div>
+			    </div>
+			</form> -->
+			</div>
+		</div>
+	</div>
+
+	<div class="black-bg footer">
+		<div class="non-container">
+			<img src="static/landing/mashf-logo.png" id="footer-logo" alt="MASHF Logo">
+			<ul class="footer-icons">
+				<li id="facebook-icon"><a href=""><img src="static/facebook-icon.png" id="facebook-logo" alt="facebook-icon"></a></li>
+				<li id="email-icon"><a href="mailto:mail@mashf.com" target="_top"><img src="static/email-icon.png" id="email-logo" alt="email-icon"></a></li>
+			</ul>
+		</div>
+	</div>
+
+</body>
+</html>

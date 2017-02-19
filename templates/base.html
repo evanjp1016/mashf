@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>Muskegon Area Sports Hall of Fame</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+	
+	<div class="navigation" id="mySidenav">
+		<nav>
+			<ul>
+				<li><a href="javascript:void(0)" class="remove" onclick="closeNav()">&times;</a></li>
+				<li><a href="home">Home</a></li>
+				<li><a href="exhibits">Exhibits</a></li>
+				<li><a href="history">History</a></li>
+				<li><a href="inductees">Inductees</a></li>
+				<li><a href="distinguished-service">Distinguished Service</a></li>
+				<li><a href="scholar-athlete">Scholar Athletes</a></li>
+				<li><a href="ceremony">Ceremony</a></li>
+				<li><a href="news">News</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Donate</a></li>
+				<li><a href="#">Sponsors</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<script>
+		function openNav() {
+		    document.getElementById("mySidenav").style.width = "300px";
+		    document.getElementById("openbutton").style.display = "none";
+		}
+
+		function closeNav() {
+		    document.getElementById("mySidenav").style.width = "0";
+		    document.getElementById("openbutton").style.display = "flex";
+		}
+	</script>
+
+	<span onclick="openNav()" class="glyphicon glyphicon-menu-hamburger" aria-hidden="true" id="openbutton"></span>
+
+	<div>
+		{% block content %}
+		I shouldn't see this, yo.
+		{% endblock %}
+	</div>
+
+	<div class="black-bg footer">
+		<div class="non-container">
+			<img src="static/landing/mashf-logo.png" id="footer-logo" alt="MASHF Logo">
+			<ul class="footer-icons">
+				<li id="facebook-icon"><a href=""><img src="static/facebook-icon.png" id="facebook-logo" alt="facebook-icon"></a></li>
+				<li id="email-icon"><a href="mailto:mail@mashf.com" target="_top"><img src="static/email-icon.png" id="email-logo" alt="email-icon"></a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
