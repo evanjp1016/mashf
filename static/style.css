@@ -1,0 +1,365 @@
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;	
+	list-style: none;
+}
+
+.landing-background {
+    background: url("landing/landing-bg-web.jpg") no-repeat center center fixed; 
+	background-size: cover;
+	min-height: 100vh;
+}
+
+.landing-background img {
+	width: 30%;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+.navigation {
+	position: fixed;
+    bottom: 0;
+    left: 0px;
+    width: 0px;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.0);
+    overflow-x: hidden;
+    transition: 0.1s;
+    z-index: 10000;
+    border-right: 2px solid white;
+    /* display: none; */
+}
+
+.remove {
+	font-size: 50px;
+    color: #adadad;
+}
+
+.remove:hover {
+	transition: color 0.2s ease;
+	color: white;
+	cursor: pointer;
+}
+
+.navigation ul {
+	padding-left: 40px;
+	padding-top: 80px;
+	font-size: 1.2em;
+	font-family: Avenir;
+	line-height: 3em;
+}
+
+.navigation a {
+	text-transform: uppercase;
+	color: #ADADAD;
+}
+
+.navigation a:hover {
+	color: #ffffff;
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+
+.glyphicon.glyphicon-menu-hamburger {
+    position: fixed;
+    padding: 20px;
+    margin-top: -1px;
+    font-size: 30px;
+    color: white;
+    z-index: 100000;
+    transition: color 0.2s ease;
+    background-color: rgba(43, 43, 43, 0.6);
+}
+
+.glyphicon.glyphicon-menu-hamburger:hover {
+	transition: color 0.2s ease;
+	color: #adadad;
+	cursor: pointer;
+}
+
+.scroll-icon {
+    color: #adadad;
+}
+
+.landing-background p {
+	bottom: 2%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-family: "Times New Roman";
+	font-size: 1.3em;
+	line-height: 1em;
+
+}
+
+.landing-background a {
+	color: #adadad;
+	text-decoration: none;
+}
+
+.container {
+	padding-top: 70px;
+	padding-bottom:160px;
+}
+
+.white-bg p {
+	font-family: 'Roboto', 'sans-serif';
+	color: #7c7c7c;
+	letter-spacing: 0.8px;
+}
+
+.white-bg a {
+	color: #595959;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.white-bg a:hover {
+	color: #000000;
+	transition: color 0.2s ease;
+}
+
+.orange-section-header {
+	font-family: "Times New Roman";
+	color: #d89450;
+	text-transform: uppercase;
+	font-style: oblique;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+
+.orange-bg{
+	background-color: #d89450;
+}
+
+.orange-bg p {
+	font-family: 'Roboto', 'sans-serif';
+	color: #ffffff;
+	letter-spacing: 0.8px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.btn {
+	border-radius: 5px;
+	font-family: 'Roboto', 'sans-serif';
+	color: white;
+	font-size: 0.9empx;
+	background: #c18148;
+	padding: 10px 20px 10px 20px;
+	margin-top: 60px;
+	margin-left: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	border-bottom: solid #b27746 3px;
+}
+
+.btn:hover {
+	color: white;
+}
+
+.btn:active {
+	color: white;
+	border-bottom: solid #c18148 3px;
+}
+
+#btn-down {
+	font-size: 1.1em; !importnant
+	color: white; !importnant
+}
+
+/*.btn-success:hover {
+	background: #c18148;
+	transition: background 0.2s ease;
+}
+
+.btn-send:active {
+	color: white;
+	border-bottom: solid #c18148 3px;
+}
+
+.btn-send {
+	background: #d89450;
+}*/
+
+.white-section-header {
+	font-family: "Times New Roman";
+	color: #ffffff;
+	text-transform: uppercase;
+	font-style: oblique;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+.location-background {
+	background: url("landing/lc-walker.jpg") no-repeat center center fixed;
+	background-size: cover;
+	min-height: 70vh;
+}
+
+.location-background h2 {
+	font-size: 4em;
+	color: #ffffff;
+	font-family: "Times New Roman";
+	text-align: center;
+	padding-top: 150px;
+}
+
+.photo-header {
+	font-family: Avenir;
+	font-weight: 700;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.location-background h4 {
+	color: #ffffff;
+	font-size: 1.9em;
+	font-family: 'Roboto', 'sans-serif';
+	text-align: center;
+	font-weight: 100;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.location-background h5 {
+	color: #ffffff;
+	font-size: 2.2em;
+	font-family: 'Roboto', 'sans-serif';
+	text-align: center;
+	padding-top: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1.2px;
+}
+
+.location-background h6 {
+	color: #ffffff;
+	font-size: 1.2em;
+	font-family: 'Roboto', 'sans-serif';
+	text-align: center;
+	font-weight: 100;
+	text-transform: uppercase;
+	letter-spacing: 0.3px;
+}
+
+.gray-bg {
+	background-color: #f7f7f7;
+}
+
+.gray-bg p {
+	font-family: 'Roboto', 'sans-serif';
+	color: #7c7c7c;
+	letter-spacing: 0.8px;
+}
+
+.gray-bg a {
+	color: #595959;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.gray-bg a:hover {
+	color: #000000;
+	transition: color 0.2s ease;
+}
+
+.contact-p {
+	display: block;
+}
+
+.black-bg {
+	background-color: #2b2b2b;
+}
+
+.non-container {
+	padding: 40px;
+	display: block;
+}
+
+
+
+
+
+
+
+/* responsive design portion */
+
+.footer {
+	
+}
+
+.footer-icons li {
+	position: relative;
+	display: inline;
+	border: solid #545454 1px;
+	border-radius: 50%;
+	padding: 25px;
+}
+
+.footer-icons ul {
+	position: relative;
+	right: 20%;
+}
+
+.footer-icons li:hover {
+	border: solid #B9B5B9 1px;
+	transition: 0.3s;
+}
+
+.footer-icons li img {
+
+}
+
+#facebook-logo {
+	width: 15px;
+}
+
+#email-logo {
+	width: 30px;
+}
+
+#email-icon {
+	padding-left: 18px;
+	padding-right: 18px;
+}
+
+#facebook-icon {
+	right: 20px;
+}
+
+#footer-logo {
+	width: 7.7%;
+	position: relative;
+	left: 89%;
+}
+
+/* responsive design portion */
+
+@media only screen and (max-width: 650px) {
+	.landing-background {
+		max-height: 70%;
+	}
+
+	.landing-background img {
+		width: 60%;
+	}
+
+	.location-background {
+		min-height: 50vh;
+	}
+
+	#footer-logo {
+	width: 30%;
+	position: relative;
+	left: 70%;
+}
+}
+
+
